@@ -7,13 +7,17 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-
+        plugin = {
+                "html:target/cucumber-report.html",
+                "json:target/cucumber.json"
+        },
         features = "src/test/resources/features",
-        glue = "com/zerobank/steddefinitions",
+        glue = "com/zerobank/stepdefinitions",
         dryRun = false,
-        tags = "@accountActivity"
-
+        tags = ""
 )
+
+
 public class CukesRunner {
 
 

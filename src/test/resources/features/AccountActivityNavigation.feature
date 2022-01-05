@@ -1,4 +1,4 @@
-@accountActivity
+
 
 Feature: Navigating to specific accounts in Accounts Activity
 
@@ -7,7 +7,7 @@ Feature: Navigating to specific accounts in Accounts Activity
     And User logins with username "username" and password "password"
 
 
-
+  @accountActivity
     Scenario Outline: Check if the dropdown matching
 
       When the user clicks on "<option>" link on the Account Summary page
