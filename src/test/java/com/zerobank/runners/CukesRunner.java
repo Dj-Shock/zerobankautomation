@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
 
         features = "src/test/resources/features",
         glue = "com/zerobank/steddefinitions",
-        dryRun = true,
+        dryRun = false,
         tags = "@accountActivity"
 
 )

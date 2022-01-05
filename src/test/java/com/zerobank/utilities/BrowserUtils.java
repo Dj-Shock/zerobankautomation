@@ -1,6 +1,8 @@
 package com.zerobank.utilities;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebElement;
 
 public class BrowserUtils {
 
@@ -22,6 +24,12 @@ public class BrowserUtils {
     public static void scrollDown(int pixels){
         JavascriptExecutor js = (JavascriptExecutor) Driver.getDriver();
         js.executeScript("window.scrollBy(0, "+ pixels +")");
+    }
+
+     public static void clickToLink(String text){
+        WebElement link = Driver.getDriver().findElement(By.partialLinkText(text));
+        link.click();
+
     }
 }
 

@@ -7,11 +7,7 @@ import org.openqa.selenium.WebElement;
 public class AccountSummaryPage extends BasePage {
 
 
-    public void clickToLink(String text){
-        WebElement link = Driver.getDriver().findElement(By.partialLinkText(text));
-    link.click();
 
-    }
 
 
 }

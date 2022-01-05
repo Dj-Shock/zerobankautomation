@@ -16,12 +16,13 @@ public class Hooks {
 
         @Before()
         public void setUpScenario() {
-            System.out.println("BEFORE - setUp method is running before the scenario ");
+
+            // System.out.println("BEFORE - setUp method is running before the scenario ");
         }
 
         @After
         public void tearDownScenario() {
-            System.out.println("AFTER - tearDown method is running after the scenario");
+            // System.out.println("AFTER - tearDown method is running after the scenario");
             Driver.closeDriver();
         }
     }
